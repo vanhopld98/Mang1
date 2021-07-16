@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<input type="text" id="1">
+<button type="button" onclick="search()">Tìm Kiếm</button>
+<script>
+   function search(){
+       let ENG = ['cat' , 'tiger' , 'lion' ];
+       let VIE = ['con mèo','con hổ','con sư tử'];
+       let vitriENG = -1;
+       let vitriVIE = -1;
+       let timkiem = document.getElementById('1').value
+       for (let i = 0; i < ENG.length; i++) {
+           if (timkiem===ENG[i]){
+               vitriENG = i;
+               break;
+           }
+       }
+       for (let j = 0; j < VIE.length; j++) {
+           if (timkiem === VIE[j]) {
+               vitriVIE = j;
+               break;
+           }
+       }
+       if(vitriENG === -1 && vitriVIE === -1){
+           alert("Không tìm thấy")
+       }else if (vitriENG !== -1){
+           alert(VIE[vitriENG])
+       }else if (vitriVIE !== -1){
+           alert(ENG[vitriVIE])
+       }
+   }
+</script>
+</body>
+</html>
