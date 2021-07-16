@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+   let chunhapvao = prompt('Nhập chữ gì đó đê');
+   let chuinhoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   let chuainthuong ='qwertyuioplkjhgfdsazxcvbnm';
+   let ketqua = [];
+   for (let i = 0; i < chunhapvao.length; i++) {
+       if (chuinhoa.indexOf(chunhapvao[i]) !== -1){
+           ketqua.push(chunhapvao[i].toLowerCase());
+       }else if (chuainthuong.indexOf(chunhapvao[i]) !== -1){
+           ketqua.push(chunhapvao[i].toUpperCase());
+       }
+   }
+   document.write(ketqua.join(''))
+</script>
+</body>
+</html>

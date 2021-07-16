@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let sonhapvao = prompt();
+    let ketqua = [];
+    for (let i = 0; i < sonhapvao-1; i++) {
+        if (sonhapvao[i]%2 === 0 && sonhapvao[i+1]){
+            ketqua.push(sonhapvao[i] ,'-');
+        }else {
+            ketqua.push(sonhapvao[i]);
+        }
+    }
+    document.write(ketqua.join(''));
+</script>
+</body>
+</html>
