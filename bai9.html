@@ -6,7 +6,7 @@
 </head>
 <body onload="daura()">
 <h1> Type anything slowly</h1>
-<textarea style="height: 150px;width: 300px" id="1"></textarea>
+<textarea onkeypress="daura()" style="height: 150px;width: 300px" id="1"></textarea>
 <script>
     function daura(){
         let a =['T','Ô','I',' ','Đ','Ẹ','P',' ','T','R','A','I',' ','!','!'];
@@ -16,18 +16,15 @@
             for (let i = 0; i < dauvao.length ; i++) {
                 ketqua.push(a[i]) ;
                 if (i === a.length-1){
-                    document.getElementById('1').value = "";
+                    // document.getElementById('1').value = "";
                     dauvao = "";
                     ketqua = []
                 }
             }
         }
         document.getElementById('1').value = ketqua.join('') ;
-        setTimeout("daura()", 1);
+        // setTimeout("daura()", 1);
     }
-
-
-
 </script>
 </body>
 </html>
