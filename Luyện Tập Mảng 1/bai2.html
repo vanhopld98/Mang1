@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+  let soNguyen = [11,22,33,44,55,6,7,8,9,10];
+  let soLonNhat = soNguyen[0];
+  let vitri = 0
+  for (let i = 0; i < soNguyen.length; i++) {
+    if (soNguyen[i] > soLonNhat){
+      soLonNhat = soNguyen[i]
+      vitri = i
+    }
+  }
+  document.write('Vị Trí Của Số Đó Là '+vitri+'<br>')
+  document.write('Số Lớn Nhất Là '+soLonNhat)
+</script>
+</body>
+</html>

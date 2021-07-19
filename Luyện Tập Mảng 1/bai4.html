@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let soNguyen = [11,22,33,44,55,6,7,8,9,10];
+    let viTriDauTien = 0;
+    let viTriCuoi = soNguyen.length-1
+    while (viTriDauTien<viTriCuoi){
+        let a = soNguyen[viTriDauTien];
+        soNguyen[viTriDauTien] = soNguyen[viTriCuoi];
+        soNguyen[viTriCuoi] = a;
+        viTriDauTien++;
+        viTriCuoi--;
+    }
+    document.write(soNguyen)
+</script>
+</body>
+</html>

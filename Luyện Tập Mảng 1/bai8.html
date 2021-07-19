@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+  let soNguyen = [11,22,33,44,55,6,7,8,9,10];
+  let max = soNguyen[0];
+  for (let i = 0; i < soNguyen.length; i++) {
+    for (let j = 0; j < i; j++) {
+        if (soNguyen[j]<soNguyen[i]){
+          max = soNguyen[i]
+          soNguyen[i]=soNguyen[j]
+          soNguyen[j]=max
+        }
+    }
+  }
+  document.write(soNguyen)
+</script>
+</body>
+</html>

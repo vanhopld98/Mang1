@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    let soNguyen = [11,22,33,44,55,6,7,8,9,10];
+    let soLonNhat = soNguyen[0];
+    let tong = 0;
+    let avg=0;
+    for (let i = 0; i < soNguyen.length; i++) {
+        if (soNguyen[i] > soLonNhat){
+            soLonNhat = soNguyen[i]
+        }
+        tong = (tong+soNguyen[i])
+
+    }
+    avg=tong/soNguyen.length
+    document.write('Số lớn nhất là: '+soLonNhat+'<br>')
+    document.write('Trung bình của các phần tử là: '+ avg)
+</script>
+</body>
+</html>
