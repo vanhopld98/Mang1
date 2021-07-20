@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+  let a = prompt('Nhập gì đê:')
+  let b = [];
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === '-'){
+      b.push('_')
+    }else {
+      b.push(a[i])
+    }
+  }
+  document.write(b.join(''))
+</script>
+</body>
+</html>
